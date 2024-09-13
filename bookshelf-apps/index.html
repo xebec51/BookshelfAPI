@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, 1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="head_bar">
+  <h1 class="head_bar__title">Bookshelf Apps</h1>
+</header>
+<main>
+  <section class="input_section">
+    <h2>Masukkan Buku Baru</h2>
+    <form id="inputBuku">
+      <div class="input">
+        <label for="inputJudulBuku">Judul</label>
+        <input id="inputJudulBuku" type="text" required>
+      </div>
+      <div class="input">
+        <label for="inputPenulisBuku">Penulis</label>
+        <input id="inputPenulisBuku" type="text" required>
+      </div>
+      <div class="input">
+        <label for="inputTahunBuku">Tahun</label>
+        <input id="inputTahunBuku" type="number" required>
+      </div>
+      <div class="input_inline">
+        <label for="inputStatusSelesai">Selesai dibaca</label>
+        <input id="inputStatusSelesai" type="checkbox">
+      </div>
+      <button id="submitBuku" type="submit">Masukkan Buku ke rak <span>Belum dibaca</span></button>
+    </form>
+  </section>
+
+  <section class="search_section">
+    <h2>Cari Buku (Opsional)</h2>
+    <form id="cariBuku">
+      <label for="cariJudulBuku">Judul</label>
+      <input id="cariJudulBuku" type="text">
+      <button id="submitCari" type="submit">Cari</button>
+    </form>
+  </section>
+  
+  <section class="book_shelf">
+    <h2>Belum dibaca</h2>
+    <div id="rak-belum-dibaca" class="book_list"></div>
+  </section>
+  
+  <section class="book_shelf">
+    <h2>Sedang Dibaca</h2>
+    <div id="rak-sedang-dibaca" class="book_list"></div>
+  </section>
+
+  <section class="book_shelf">
+    <h2>Selesai dibaca</h2>
+    <div id="rak-selesai-dibaca" class="book_list"></div>
+  </section>
+</main>
+
+<div id="dialogHapusBuku" class="dialog">
+  <div class="dialog-content">
+    <h3>Konfirmasi Hapus</h3>
+    <p>Apakah Anda yakin ingin menghapus buku ini?</p>
+    <button id="dialogHapusYa" class="red">Ya</button>
+    <button id="dialogHapusTidak" class="gray">Tidak</button>
+  </div>
+</div>
+
+<div id="dialogEditBuku" class="dialog">
+  <div class="dialog-content">
+    <h3>Edit Buku</h3>
+    <form id="editBuku">
+      <div class="input">
+        <label for="editJudulBuku">Judul</label>
+        <input id="editJudulBuku" type="text" required>
+      </div>
+      <div class="input">
+        <label for="editPenulisBuku">Penulis</label>
+        <input id="editPenulisBuku" type="text" required>
+      </div>
+      <div class="input">
+        <label for="editTahunBuku">Tahun</label>
+        <input id="editTahunBuku" type="number" required>
+      </div>
+      <button id="submitEditBuku" type="submit" class="green">Simpan Perubahan</button>
+      <button id="dialogEditBatal" type="button" class="gray">Batal</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
