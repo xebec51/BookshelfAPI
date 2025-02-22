@@ -1,7 +1,6 @@
 # **Bookshelf API Project - Final Submission**
 
-[![GitHub](https://img.shields.io/badge/GitHub-xebec51-blue?logo=github)](https://github.com/xebec51)  
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/xebec51/Submission-Membangun-Bookshelf-App---Dicoding-Indonesia/refs/heads/main/LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-xebec51-blue?logo=github)](https://github.com/xebec51) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/xebec51/Submission-Membangun-Bookshelf-App---Dicoding-Indonesia/refs/heads/main/LICENSE)
 
 ---
 
